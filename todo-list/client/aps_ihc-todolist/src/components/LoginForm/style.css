@@ -1,0 +1,58 @@
+.login-form {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+    padding: 4rem;
+
+    font-family: var(--fonte-texto);
+}
+
+form .input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 100%;
+}
+
+form .input div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+form .input div label {
+    font-size: 0.9rem;
+}
+
+form .input div input {
+    width: 100%;
+    padding: .7rem;
+    border-radius: 200px;
+    background-color: var(--cor-secundaria);
+    border: none;
+    outline: none;
+}
+
+form div input::placeholder {
+    color: var(--neutro);
+    font-weight: bold;
+    
+}
+
+form div input:focus::placeholder {
+    color: var(--cor-secundaria)
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 400;
+}
