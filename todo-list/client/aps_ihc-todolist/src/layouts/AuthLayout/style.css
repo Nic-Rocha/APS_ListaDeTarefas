@@ -19,9 +19,7 @@
     color: var(--cor-secundaria);
 }
 
-.auth-image {
-    width: 450px;
-}
+/* TODO: Commitar Mudança no Style das Imagens */
 
 .auth-content {
     display: flex;

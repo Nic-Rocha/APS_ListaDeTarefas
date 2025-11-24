@@ -1,9 +1,8 @@
 import { useState } from 'react';
 
 import './style.css'
-import Button from '../Button'
 
-function Form({fields, onSubmit, submitText = "Enviar"}) {
+function Form({fields, onSubmit, endText, submitText = "Enviar"}) {
   const initialData = fields.reduce((acc, field) => {
       acc[field.name] = "";
       return acc
@@ -38,9 +37,10 @@ function Form({fields, onSubmit, submitText = "Enviar"}) {
         ))}
       </div>
 
-      <Button text="LOGIN" type="submit">{submitText}</Button>
+        {/* TODO: Commitar Mudança no Botão */}
+      <button type="submit">{submitText}</button>
 
-      <p> Ainda não possui uma conta? <a href="/registro">Crie uma conta</a></p>
+      {endText}
     </form>
   );
 }
