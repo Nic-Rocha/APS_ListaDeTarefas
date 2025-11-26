@@ -14,7 +14,7 @@
 }
 
 .auth-icon-user {
-    width: 130px;
+    font-size: 130px;
     height: auto;
     color: var(--cor-secundaria);
 }

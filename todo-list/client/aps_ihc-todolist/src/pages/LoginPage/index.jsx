@@ -8,9 +8,6 @@ import { loginFields } from './loginFields';
 
 import checklistImg from '../../assets/checklist-img.png'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
-
 const LoginIllustration = () => (
   <img src={checklistImg} className="login-image"/> 
 );
@@ -20,7 +17,7 @@ const CriarContaText = () => (
 )
 
 const IconUser = () => (
-  <FontAwesomeIcon icon={faCircleUser} className='auth-icon-user'/>
+  <i className='auth-icon-user fa-classic fa-solid fa-circle-user'/>
 )
 
 function LoginPage() {
