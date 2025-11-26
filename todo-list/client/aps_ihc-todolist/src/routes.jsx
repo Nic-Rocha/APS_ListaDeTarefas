@@ -9,6 +9,7 @@ function AppRoutes() {
             <Routes>
                 <Route path="/" element={ <LoginPage /> }/>
                 <Route path="/register" element={ <RegisterPage />}/>
+                <Route path="/lista" element={ <Listpage />}/>
             </Routes>
         </BrowserRouter>
     )
