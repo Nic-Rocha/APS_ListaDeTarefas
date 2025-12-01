@@ -77,6 +77,8 @@ function LoginPage() {
       onSubmit={handleLoginSubmit}
       submitText="Entrar" 
       endText={<CriarContaText/>}
+      formStyle={"login-form"}
+      buttomStyle={"button-login-register"}
       />
     </AuthLayout>
     

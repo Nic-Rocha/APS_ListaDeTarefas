@@ -57,7 +57,7 @@ p {
     font-weight: 400;
 }
 
-button {
+.button-login-register {
     cursor: pointer;
     
     background-image: linear-gradient(90deg, var(--cor-secundaria), var(--cor-terciaria) );

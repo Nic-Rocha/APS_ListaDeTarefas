@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import './style.css'
 
-function Form({fields, onSubmit, endText, nameClass, submitText = "Enviar"}) {
+function Form({fields, onSubmit, endText, nameClass, submitText = "Enviar", buttomStyle, formStyle}) {
   const initialData = fields.reduce((acc, field) => {
       acc[field.name] = "";
       return acc
@@ -25,7 +25,7 @@ function Form({fields, onSubmit, endText, nameClass, submitText = "Enviar"}) {
 
   return (
     
-    <form className="login-form" onSubmit={handleSubmit}>
+    <form className={formStyle} onSubmit={handleSubmit}>
 
       <div className={nameClass}>
         {fields.map((field) => (
@@ -37,7 +37,7 @@ function Form({fields, onSubmit, endText, nameClass, submitText = "Enviar"}) {
         ))}
       </div>
 
-      <button type="submit">{submitText}</button>
+      <button className={buttomStyle} type="submit">{submitText}</button>
 
       {endText}
     </form>
