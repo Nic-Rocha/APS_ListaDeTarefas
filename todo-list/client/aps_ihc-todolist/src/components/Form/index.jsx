@@ -30,7 +30,7 @@ function Form({fields, onSubmit, endText, submitText = "Enviar"}) {
       <div className="input">
         {fields.map((field) => (
           <div key={field.name}>
-            <label htmlFor={field.name}>{field.labelText}</label>
+            <label htmlFor={field.name}>{field.label}</label>
             <input id={field.name} name={field.name} type={field.type || 'text'} placeholder={field.placeholder} value={formData[field.name]} onChange={handleChange}/>
           </div>
 

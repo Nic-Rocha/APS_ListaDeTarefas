@@ -1,4 +1,15 @@
 export const loginFields = [
-    {name: "email", label: "E-mail", type: "email", placeholder: "E-mail", labelText: "Digite o seu endereço de e-mail"},
-    {name: "password", label: "password", type: "password", placeholder: "Senha", labelText: "Digite a sua senha"}
+    {
+        name: "email",
+        label: "Digite o seu endereço de e-mail",
+        type: "email",
+        placeholder: "E-mail",
+    },
+
+    {
+        name: "password",
+        label: "Digite a sua senha",
+        type: "password",
+        placeholder: "Senha",
+    }
 ]
