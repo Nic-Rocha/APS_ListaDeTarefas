@@ -1,20 +1,19 @@
 /* Modifica o fundo */
- .listPage-wrapper {
+ .list-page-wrapper {
     width: 100vw;
     height: 100vh;
 
     background-image: url(../../../src/Assets/APSbackground.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 } 
+
 /* Modifica o quadrado que contem as informações */
-main {
+.list-page-container {
     background-color: var(--neutro);
     margin-top: 64px;
 
@@ -28,29 +27,16 @@ main {
     border-radius: 16px;
 }
 
-.titulo-lista {
-    font-family: var(--fonte-titulo);
-    color: var(--cor-primaria);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
+.gatinho{
+  width: 200px;
+  height: 120px;
 }
 
-hr {
-    border: none;
-    border-bottom: 3px dotted var(--cor-primaria);
-    margin-bottom: 24px;
-}
-
-.texto-geral {
-    font-family: var(--fonte-texto);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-}
-form .input-container {
-
+.list-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 form .input-container div input{
@@ -65,6 +51,7 @@ form .input-container div input{
     border-color: var(--cor-primaria);
 
 }
+
 form .input-container div input::placeholder {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
@@ -76,62 +63,66 @@ form .input-container div input::placeholder {
 form .input-container div input:focus{
     outline: none;
 }
-form div div .button-item{
-    padding: 12px 16px;
-    border-radius: 24px;
+
+.button-item {
+    padding: .5rem 1.5rem;
+    border-radius: 5rem;
     background-color: var(--cor-primaria);
     color: var(--neutro);
     font-family: var(--fonte-texto);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
+    font-size: 1rem;
+    font-weight: normal;
     border: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12px;
 }
-/* .button-item:hover {
+
+.button-item:hover {
     cursor: pointer;
     background-color: var(--cor-secundaria);
     transition: 0.2s ease-in-out;
-} */
-
-.gatinho{
-  width: 200px;
-  height: 120px;
 }
 
-/* form {
+.list-container {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.titulo-lista {
+    font-family: var(--fonte-texto);
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 32px;
+}
+
+hr {
+    border: none;
+    border-bottom: 2px dotted var(--cor-primaria);
+}
+
+ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 8px;
-} */
-
-/* .lista-item-container {
-    display: flex;
-    gap: 8px;
-} */
-
-/* ul {
+    gap: 1rem;
     list-style-type: none;
-} */
-/* .checkbox-customizado {
+}
+
+/* 
+.checkbox-customizado {
     width: 20px;
     height: 20px;
     background-color: var(--neutro);
     border: 1px solid var(--verde);
     cursor: pointer;
     border-radius: 4px;
-} */
+}
 
-/* .checked {
+.checked {
     background-color: var(--verde);
     position: relative;
-} */
+}
 
-/* .checkbox-customizado.checked::after {
+.checkbox-customizado.checked::after {
     content: "";
     position: absolute;
     left: 30%;
@@ -143,18 +134,15 @@ form div div .button-item{
     border-left: 2px solid var(--neutro);
 
     transform: rotate(-140deg);
-} */
+}
 
-/* .texto-data {
+.texto-data {
     font-size: 12px;
     line-height: 20px;
-} */
+}
 
-/* .item-lista-button {
+.item-lista-button {
     border: none;
     background-color: transparent;
-} */
-
-.container-lista {
-    width: 100%;
 }
+ */

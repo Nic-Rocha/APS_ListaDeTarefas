@@ -1,40 +1,42 @@
 import './style.css'
 
+import Form  from '../../components/Form'
+import ListItem from '../../components/ListItem'
+
+import { listFields } from './listFields'
+
 function ListPage() {
   return (
-    <div className='listPage-wrapper'>
-      <main>
-        <img class="gatinho" src="../../../src/assets/comprasgato.png" alt="compras_gato" />
-        <form action="">
-          <section class="newItem">
-            <input class="input-item" type="text" id="newInput" placeholder="Adicionar novo item:"></input>
-            <input class="input-item" type="text" id="newQuantity" placeholder="Quantidade:"></input>
-            <input class="input-item" type="text" id="newPrice" placeholder="Valor:"></input>
-            <button onclick="newItem()" class="button-item" id="adicionar-item" type="button">Salvar item</button>
+      <div className='list-page-wrapper'>
+        <div className='list-page-container'>
+          <img className="gatinho" src="../../../src/assets/comprasgato.png" alt="compras_gato" />
+          <Form containerWrapper={"input-container"}
+                fields={listFields}
+                submitText="Criar item"
+                formStyle={"list-form"}
+                buttomStyle={"button-item"}/>
 
-          </section>
-        </form>
-        <div class="container-lista">
-          <h2>Lista de compras</h2>
-          <hr />
+          <div className="list-container">
+            <h2 className='titulo-lista'>Lista de Compras</h2>
+            <hr />
+            <ul>
 
-          <ul id="lista-de-compras">
-            <li>
-              <div class="lista-item-container">
-                <table id="mesa">
-                  <tr>
-                    <th>Nome | </th>
-                    <th>Quantidade | </th>
-                    <th>Valor</th>
-                  </tr>
-                </table>
-              </div>
-              <p class="texto-data">Segunda-feira (31/10/2022) às 08:30</p>
-            </li>
-          </ul>
+              <ListItem 
+                nome={"Nome Produto"} 
+                quantidade={"4"} 
+                valor={"12,22"}
+                data={"12/12/2025"}
+              />
+              <ListItem 
+                nome={"Nome Produto"} 
+                quantidade={"4"} 
+                valor={"12,22"}
+                data={"12/12/2025"}
+              />
+            </ul>
+          </div>
         </div>
-      </main>
-    </div>
+      </div>
   )
 }
 
