@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import './style.css'
 
-function Form({fields, onSubmit, endText, nameClass, submitText = "Enviar", buttomStyle, formStyle}) {
+function Form({fields, onSubmit, endText, containerWrapper, submitText = "Enviar", buttomStyle, formStyle}) {
   const initialData = fields.reduce((acc, field) => {
       acc[field.name] = "";
       return acc
@@ -27,7 +27,7 @@ function Form({fields, onSubmit, endText, nameClass, submitText = "Enviar", butt
     
     <form className={formStyle} onSubmit={handleSubmit}>
 
-      <div className={nameClass}>
+      <div className={containerWrapper}>
         {fields.map((field) => (
           <div key={field.name}>
             <label htmlFor={field.name}>{field.label}</label>
