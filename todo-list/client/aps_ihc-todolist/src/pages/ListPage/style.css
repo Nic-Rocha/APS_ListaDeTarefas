@@ -111,7 +111,6 @@ ul {
 .checkbox{
     width: 20px;
     height: 20px;
-
     background-color: var(--neutro);
     border: 2px solid var(--cor-secundaria);
     cursor: pointer;
@@ -119,15 +118,12 @@ ul {
     -webkit-appearance: none;
 }
 
-.checkbox:checked {
-    background-color: var(--cor-secundaria);
+.checkboxchecked {
+    background-color: var(--cor-terciaria);
     position: relative;
-    
-    appearance: none;
-    -webkit-appearance: none;
 }
 
-.checkbox:checked::after {
+.checkbox-customizado.checked::after {
     content: "";
     position: absolute;
     left: 30%;
@@ -139,7 +135,9 @@ ul {
     border-left: 2px solid var(--neutro);
 
     transform: rotate(-140deg);
+}
 
-    appearance: none;
-    -webkit-appearance: none;
+.item-lista-button {
+    border: none;
+    background-color: transparent;
 }

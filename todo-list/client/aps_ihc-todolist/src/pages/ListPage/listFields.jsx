@@ -3,7 +3,7 @@ export const listFields = [
         name: "title", 
         label: "", 
         type: "text", 
-        placeholder: "Nome do item:"},
+        placeholder: "Tarefa:"},
 
     {
         name: "description", 
