@@ -1,6 +1,6 @@
 import './style.css'
 
-function ListItem({ nome, quantidade, valor, data, concluido, onToggle }) {
+function ListItem({ title, description, deadline, data, concluido, onToggle, deleteFunction }) {
   return (
     <li className={concluido ? 'item-concluido' : ''}>
       <div className="list-item-container">
@@ -17,12 +17,14 @@ function ListItem({ nome, quantidade, valor, data, concluido, onToggle }) {
               </th>
               {}
 
-              <th className="texto">{nome}</th>
-              <th className="texto">{quantidade}</th>
-              <th className="texto">{"Deadline:" + data}</th>
-              <button className='lixeira'
-                  // onClick={onDelete}
-                ><i class="fa-solid fa-trash-can"></i>
+              <th className="texto">{title}</th>
+              <th className="texto">{description}</th>
+              <th className="texto">{"Deadline:" + deadline}</th>
+
+              <button 
+                className='lixeira'
+                onClick={deleteFunction}>
+                <i class="fa-solid fa-trash-can"/>
               </button>
             </tr>
           </tbody>
