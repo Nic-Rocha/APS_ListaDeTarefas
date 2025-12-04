@@ -3,7 +3,7 @@ li {
     
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: .5rem;
 
@@ -12,7 +12,6 @@ li {
     border-radius: 1rem;
 
 }
-
 li .texto{
     color: var(--cor-secundaria);
     font-weight: 600;
@@ -32,23 +31,20 @@ li .texto-data {
 
 .table-item tbody tr {
     display: grid;
-    grid-template-rows: 0.25fr 1fr 1fr 1fr 0.25fr;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
 }
-
 .fa-solid {
     color: var(--cor-primaria);
     position: relative;
     cursor: pointer;
 
 }
-
 .lixeira{
     background: none; 
     border: none;
     padding: 0;
     margin: 0;
 }
-
-.lixeira:hover {
+.lixeirag:hover {
     opacity: 0.7;
 }

@@ -118,12 +118,12 @@ ul {
     -webkit-appearance: none;
 }
 
-.checkboxchecked {
+.checkbox.checked {
     background-color: var(--cor-terciaria);
     position: relative;
 }
 
-.checkbox-customizado.checked::after {
+.checkbox.checked::after {
     content: "";
     position: absolute;
     left: 30%;
@@ -141,3 +141,5 @@ ul {
     border: none;
     background-color: transparent;
 }
+label{
+color: aliceblue;}
