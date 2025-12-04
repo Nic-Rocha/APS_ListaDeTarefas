@@ -49,7 +49,7 @@ function LoginPage() {
       const responseData = await response.json();
       console.log("Login OK! Token recebido:", responseData);
 
-      localStorage.setItem('user_token', responseData.access_token);
+      localStorage.setItem('authToken', responseData.access_token);
 
       navigate('/listpage'); 
 
