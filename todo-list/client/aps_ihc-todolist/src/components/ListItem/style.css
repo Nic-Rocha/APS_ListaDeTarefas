@@ -1,5 +1,5 @@
 li {
-    width: 500px;
+    width: 31.25rem;
     
     display: flex;
     flex-direction: column;
@@ -8,14 +8,14 @@ li {
     gap: .5rem;
 
     padding: 1rem ;
-    border: 2px solid var(--cor-primaria);
+    border: 0.125rem solid var(--cor-primaria);
     border-radius: 1rem;
 
 }
 
 li .texto-data {
     font-size: .7rem;
-    line-height: 20px;
+    line-height: 1.25rem;
 }
 
 .list-item-container, .table-item {
@@ -24,5 +24,5 @@ li .texto-data {
 
 .table-item tbody tr {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr;
 }
