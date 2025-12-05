@@ -9,9 +9,11 @@
 :root {
     --cor-primaria: #E2A16F;
     --cor-secundaria: #86B0BD;
-    --neutro: #F9F9F9;
     --cor-terciaria: #D1D3D4;
+    --cor-quartenaria: #6793a0;
+    --neutro: #F9F9F9;
     --highlight-color: #FFF0DD;
+    --neutro2: #fffbf8;
     --fonte-titulo: "Krona One", sans-serif;
     --fonte-texto:  "DM Sans", sans-serif;;
     --degrade-azul: linear-gradient(180deg, #f59bc6 0%, #c0b0da 100%);
@@ -28,6 +30,7 @@ body {
     
     background-image: var(--background);
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 p {

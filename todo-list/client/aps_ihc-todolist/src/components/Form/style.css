@@ -49,6 +49,11 @@ form div input:focus::placeholder {
     color: var(--cor-secundaria)
 }
 
+input[type="text"]{
+    color:var(--neutro);
+}
+
+
 p {
     display: flex;
     flex-direction: column;

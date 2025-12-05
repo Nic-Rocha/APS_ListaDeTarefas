@@ -153,7 +153,7 @@ function ListPage() {
 
           <div className="list-container">
             <h2 className='titulo-lista'>Lista de Compras</h2>
-            <hr />
+            <hr className='titulo-lista-linha'/>
             <ul>
 
               {listItems.length > 0 ? (
@@ -169,7 +169,7 @@ function ListPage() {
                   />
                 ))
               ) : (
-                <li>Nenhum item encontrado. Adicione um para começar!</li>
+                <li className='nenhum_item'>Nenhum item encontrado. Adicione um para começar!</li>
               )}
             </ul>
           </div>
