@@ -1,3 +1,5 @@
+/* FUNÇÃO: Largura Fixo. 
+SERVE PARA: Dar um tamanho consistente ao card da tarefa. */
 li {
     width: 31.25rem;
     
@@ -11,44 +13,49 @@ li {
     border: 0.125rem solid var(--cor-primaria);
     border-radius: 1rem;
 
-}
+} 
+/* FUNÇÃO: Estiliza os textos de título/descrição/prazo. */
 li .texto{
     color: var(--cor-secundaria);
     font-weight: 600;
     font-family: var(--fonte-texto);
 }
-
+/* FUNÇÃO: Estiliza o texto de data de adição. */
 li .texto-data {
     font-size: .7rem;
     line-height: 1.25rem;
     font-weight: 400;
     color: var(--cor-secundaria);
 }
-
+/* FUNÇÃO: Não está claro para qual elemento é aplicado, mas define cor terciária. */
 .decoracao_ListItem{
     color:var(--cor-terciaria);
 }
-
+/* FUNÇÃO: Garante que o contêiner da lista e a tabela ocupem a largura total do <li> pai. */
 .list-item-container, .table-item {
     width: 100%;
 }
-
+/* FUNÇÃO: Define 5 colunas e como elas devem dividir a largura total (100%). */
 .table-item tbody tr {
     display: grid;
     grid-template-columns: 0.125fr 1fr 1fr 1fr 0.25fr;
+    
 }
+/* FUNÇÃO: Estiliza o ícone de lixeira (o <i>) que está dentro do botão */
 .fa-solid {
     color: var(--cor-primaria);
     position: relative;
     cursor: pointer;
 
 }
+/* FUNÇÃO: Estiliza o botão que envolve o ícone. */
 .lixeira{
     background: none; 
     border: none;
     padding: 0;
     margin: 0;
 }
+/* FUNÇÃO: Adiciona um efeito de transição ao passar o mouse sobre a lixeira. */
 .lixeira:hover {
     opacity: 0.7;
     transition: 0.2s ease-in-out;
