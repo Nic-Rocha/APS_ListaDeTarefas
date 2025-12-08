@@ -152,7 +152,7 @@ function ListPage() {
                 />
 
           <div className="list-container">
-            <h2 className='titulo-lista'>Lista de Compras</h2>
+            <h2 className='titulo-lista'>Lista de Tarefas</h2>
             <hr className='titulo-lista-linha'/>
             <ul>
 

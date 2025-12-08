@@ -10,37 +10,46 @@ function ListItem({ title, description, deadline, data, concluido, onToggle, del
         <table className="table-item">
           <tbody>
             <tr>
+              <div>
 
-              {/* FUNÇÃO: Campo de seleção (o quadrado).
-              * SERVE PARA: Marcar a tarefa como feita. */}
-              <th>
-                <input className="checkbox"
-                  type="checkbox"
-                  checked={concluido} 
-                  onChange={onToggle}
-                />
-              </th>
+                <div>
+                  {/* FUNÇÃO: Campo de seleção (o quadrado).
+                  SERVE PARA: Marcar a tarefa como feita. */}
+                  <input className="checkbox"
+                    type="checkbox"
+                    checked={concluido} 
+                    onChange={onToggle}
+                  />
+                  {/* FUNÇÃO: Células que exibem os dados de texto.
+                  SERVE PARA: Mostrar o titulo da tarefa. */}
+                  <th className="texto">{title}</th>
+                </div>
+                
+                <button 
+                  className='lixeira'
+                  onClick={deleteFunction}>
+                  <i class="fa-solid fa-trash-can"/>
+                </button>
+              </div>
+              
             
               {/* FUNÇÃO: Células que exibem os dados de texto.
-              SERVE PARA: Mostrar o conteúdo da tarefa. */}
-              <th className="texto">{title}</th>
-              <th className="texto">{description}</th>
-              <th className="texto">{"Deadline:" + deadline}</th>
-             
-              {/* FUNÇÃO: Botão de ação (exclusão).
-              * SERVE PARA: Chamar a função 'deleteFunction' para remover o item. */}
-              <button 
-                className='lixeira'
-                onClick={deleteFunction}>
-                <i class="fa-solid fa-trash-can"/>
-              </button>
+              SERVE PARA: Mostrar o descrição da tarefa. */}
+              <th className="description">{description}</th>
             </tr>
           </tbody>
         </table>
       </div>
-      {/* FUNÇÃO: Parágrafo simples para data.
-      * SERVE PARA: Exibir a data de criação. */}
-      <p className="texto-data">{"Adicionado em " + data}</p>
+
+      
+      <div className='list-item-bottom'>
+        {/* FUNÇÃO: Parágrafo simples para data.
+        * SERVE PARA: Exibir a data de criação. */}
+        <p className="texto-data">{"Adicionado em " + data}</p>
+        {/* FUNÇÃO: Botão de ação (exclusão).
+        * SERVE PARA: Chamar a função 'deleteFunction' para remover o item. */}
+        <th className="texto-data">{"Deadline: " + deadline}</th>
+      </div>
     </li>
   );
 }
