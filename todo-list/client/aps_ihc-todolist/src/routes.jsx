@@ -4,8 +4,14 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import ListPage from "./pages/ListPage";
 
+/**
+ * Gerenciador de Rotas da Aplicação.
+ * Mapeia as URLs do navegador para os componentes.
+ */
+
 function AppRoutes() {
     return (
+        // Define o contexto das rotas da aplicação
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={ <LoginPage /> }/>
