@@ -30,9 +30,9 @@ Este projeto se trata de um gerenciador de tarefas pessoais. O objetivo principa
 * **CSS Modules**
 
 #### Back-end (Server)
-* **Python**: API RESTful para gerenciar as requisições.
-* **FastAPI**: Framework utilizado para o servidor.
-* **Banco de Dados**: [ex: SQLite / JSON] para persistência.
+* **Python**
+* **FastAPI**
+* **SQLite** 
 
 ## 📂 Como Rodar o Projeto
 
