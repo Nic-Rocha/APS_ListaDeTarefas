@@ -6,7 +6,7 @@ import { createRoot } from 'react-dom/client'
 
 /**
  * Ponto de entrada da aplicação.
- * Inicializa a árvore de componentes e vincula a aplicação ao DOM do navegador.
+ * Inicializa a árvore de componentes e acopla a aplicação ao DOM do navegador.
  */
 createRoot(document.getElementById('root')).render(
   <StrictMode>
