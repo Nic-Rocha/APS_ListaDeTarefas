@@ -6,11 +6,7 @@
 
 ## 📸 Demonstração
 
-<div align="center">
-  <img src="[caminho-para-sua-imagem-login.png]" alt="Tela de Login" width="400">
-  <img src="[caminho-para-sua-imagem-lista.png]" alt="Tela de Lista" width="400">
-  <img src="[caminho-para-sua-imagem-lista.png]" alt="Tela de Lista" width="400">
-</div>
+https://github.com/user-attachments/assets/028517ca-ff51-43c6-ad28-921ed28206d6
 
 ## 🚀 Sobre o Projeto
 
