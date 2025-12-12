@@ -65,4 +65,4 @@ Este projeto se trata de um gerenciador de tarefas pessoais. O objetivo principa
 ## 🤝 Autores
 
 * **[Yasmin Nascimento]** - [GitHub](https://github.com/yasrcha) 
-* **[Nicole Rocha]** - [GitHub](https://github.com/Nic-Rocha)
+* **[Nicolle Rocha]** - [GitHub](https://github.com/Nic-Rocha)
